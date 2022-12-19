@@ -1,6 +1,15 @@
 import pandas as pd
+import os
 
 
+def create_directory(directory_name):
+    if not os.path.exists(directory_name):
+        os.makedirs(directory_name)
+        print('directory {} created'.format(directory_name))
+    else:
+        print('directory {} already exists'.format(directory_name))
+
+        
 def df_split(data_frame, value_labels, split_label):
     grouped = data_frame.groupby(split_label)
     dictionary = {}
