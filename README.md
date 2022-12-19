@@ -6,4 +6,4 @@ It is also possible to run each function in the files seperately as long as the 
 The data is created in following order:
 1. Make sure that the directories 'plots' and 'data' exist.
 2. Run all functions in data_simulation.py
-3. Run the functions of measure_improvement.py and influence_calculating.py 
+3. Run the functions of measure_improvement.py and influence_calculation.py 
