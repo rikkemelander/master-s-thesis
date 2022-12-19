@@ -9,7 +9,7 @@ def create_directory(directory_name):
     else:
         print('directory {} already exists'.format(directory_name))
 
-        
+
 def df_split(data_frame, value_labels, split_label):
     grouped = data_frame.groupby(split_label)
     dictionary = {}

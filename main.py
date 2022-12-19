@@ -1,7 +1,7 @@
 import data_simulation
 import measure_improvement
 import plot_measure_improvements
-import influence_evaluation
+import influence_calculation
 import plot_influences
 import read_csv
 
@@ -28,13 +28,13 @@ plot_measure_improvements.perm_rf_plot_to_jpg()
 plot_measure_improvements.shap_plot_to_jpg()
 
 # Evaluation of final influence measures
-influence_evaluation.linear_independent_to_csv()
-influence_evaluation.linear_correlated_to_csv()
-influence_evaluation.linear_extrapolation_to_csv()
-influence_evaluation.non_linear_independent_to_csv()
-influence_evaluation.non_linear_correlated_to_csv()
-influence_evaluation.non_linear_extrapolation_to_csv()
-influence_evaluation.true_model_influence_to_csv()
+influence_calculation.linear_independent_to_csv()
+influence_calculation.linear_correlated_to_csv()
+influence_calculation.linear_extrapolation_to_csv()
+influence_calculation.non_linear_independent_to_csv()
+influence_calculation.non_linear_correlated_to_csv()
+influence_calculation.non_linear_extrapolation_to_csv()
+influence_calculation.true_model_influence_to_csv()
 
 # Plot influences
 plot_influences.linear_plot_to_jpg()
