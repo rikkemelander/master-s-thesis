@@ -3,6 +3,11 @@ import measure_improvement
 import plot_measure_improvements
 import influence_evaluation
 import plot_influences
+import read_csv
+
+# Create data directory and plot directory if they do not exist
+read_csv.create_directory('data')
+read_csv.create_directory('plots')
 
 # Simulate data (x,y)
 data_simulation.simulate_x()
